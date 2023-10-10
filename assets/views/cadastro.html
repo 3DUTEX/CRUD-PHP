@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro</title>
+  </head>
+  <body>
+    <section class="section section-cadastrar">
+      <form class="form-cadastro" method="POST" action="cada.php">
+        <h1>Cadastrar Registros</h1>
+        <div class="grupo-form">
+          <label>Nome completo: </label>
+          <input type="text" name="txtNome" maxlength="40" required />
+        </div>
+
+        <div class="grupo-form">
+          <label>Informe seu e-mail: </label>
+          <input type="email" name="txtEmail" maxlength="30" required />
+        </div>
+
+        <div class="grupo-form">
+          <label>Informe a senha: </label>
+          <input type="password" name="txtSenha" maxlength="8" required />
+        </div>
+
+        <div class="grupo-form">
+          <label>Informe o sexo: </label>
+          <label for="txtSexoF">F</label>
+          <input
+            type="radio"
+            id="txtSexoF"
+            name="txtSexo"
+            value="F"
+            maxlength="1"
+            required
+          />
+          <label for="txtSexoM">M</label>
+          <input
+            type="radio"
+            id="txtSexoM"
+            name="txtSexo"
+            value="M"
+            maxlength="1"
+            required
+          />
+        </div>
+
+        <div class="grupo-form">
+          <label for="txtData">Informe sua data de nascimento: </label>
+          <input type="date" name="txtData" required />
+        </div>
+
+        <div class="container-botoes">
+          <button type="submit">Enviar</button>
+          <button type="reset">Limpar</button>
+          <button onClick="redirecionar('../../index.html')">Menu</button>
+        </div>
+      </form>
+    </section>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
