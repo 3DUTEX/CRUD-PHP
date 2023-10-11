@@ -1,4 +1,6 @@
 .section-menu {
+  background-image: url("https://images.alphacoders.com/687/687556.png");
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -6,7 +8,7 @@
 }
 
 .title {
-  font-size: 30px;
+  font-size: 50px;
 }
 
 .title span {
@@ -14,7 +16,21 @@
 }
 
 .title-desc {
-  font-size: 20px;
+  display: flex;
+  font-size: 30px;
+}
+
+.title-desc p {
+  border:2px solid #000 ;
+  border-radius: 10px;
+  margin: 30px 10px;
+  padding: 0 10px;
+  transition: 300ms ease-in-out;
+}
+
+.title-desc p:hover{
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .title-desc span {
@@ -28,4 +44,19 @@
   display: flex;
   flex-direction: column;
   gap: 10px 0;
+}
+
+.container-menu button {
+  font-size: 20px;
+  border: none;
+  background: rgb(123, 20, 220);
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 300ms ease-in-out;
+}
+
+.container-menu button:hover{
+  cursor: pointer;
+  box-shadow: 0 0 0 3px #000;
 }

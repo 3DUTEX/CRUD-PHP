@@ -5,5 +5,5 @@
     $senha="12345678";
     $banco="BDCrud";
     
-    $CONNECTIONSTRING= new PDO("mysql:host=$servidor;dbname=$banco",$usuario,$senha);
+    $CONNECTIONSTRING = new PDO("mysql:host=$servidor;dbname=$banco", $usuario, $senha);
 ?>
